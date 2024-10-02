@@ -1,0 +1,128 @@
+*{
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(139, 91, 161);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto 0 auto;
+  max-width: 450px;
+}
+
+.stat-container{
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 160px;
+}
+.details{
+  width: 100%;
+}
+#numbers{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#progressbar{
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(119, 10, 169);
+  border-radius: 15px;
+}
+#progress{
+  width: 0%;
+  height: 10px;
+  background-color: rgb(30, 233, 15);
+  border-radius: 15px;
+}
+form{  
+  width: 100%;  
+  display: flex;
+  gap: 10px;
+  margin: 15px auto 0 auto;
+}
+input{
+  flex: 1;
+  padding: 20px;
+  height: 30px;
+  font-size: 17px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: rgb(120, 74, 142);    
+  outline: none;
+  color: white;
+}
+button{
+  width: 45px;
+  height: 45px;
+  background-color: purple;
+  border-radius: 50%;  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 30px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+#task-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.taskItem{
+  display: flex;
+  background-color: blueviolet;
+  padding: 2px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.task{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+ 
+}
+.task p{
+  font-size: 20px;
+}
+.task input{
+  width: 15px;
+  height: 15px;
+}
+.taskItem img{
+  width: 25px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.Completed{
+  text-decoration: line-through;
+  color: cyan;
+}
